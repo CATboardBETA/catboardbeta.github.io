@@ -13,7 +13,10 @@
 
     <meta charset="UTF-8">
     <script async type="text/javascript">
-        await new Promise(r => setTimeout(r, 10000));
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        await sleep(10000)
         window.location.href = "https://forms.gle/EjsnFPYmQtLuoK8p9";
     </script>
 
